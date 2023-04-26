@@ -40,24 +40,19 @@ coinRouter.get("/api/balance", async (req, res) => {
     const bscToken = await BscTokens(address);
     const ethToken = await EthToken(address);
     const polygonToken = await PolygonTokens(address);
-    const Balance = {
-      BtcBalance,
-      ltcBalance,
-      Bscbalance,
-      ethBalance,
-      polygonBalance,
-      bscToken,
-      ethToken,
-      polygonToken,
-    };
-    res.status(200).json(BtcBalance,
-      ltcBalance,
-      Bscbalance,
-      ethBalance,
-      polygonBalance,
-      bscToken,
-      ethToken,
-      polygonToken,);
+    
+    res
+      .status(200)
+      .json({
+        BtcBalance,
+        ltcBalance,
+        Bscbalance,
+        ethBalance,
+        polygonBalance,
+        bscToken,
+        ethToken,
+        polygonToken,}
+      );
   } catch (error) {
     res.status(404).json({ message: error.message });
   }
