@@ -14,7 +14,7 @@ const Bsc = async (address, userEmail) => {
         const name = "BNB Smart Chain";
         const symbol = "BNB";
         const decimals = "18";
-        const logo = 'https://myothuhtay.github.io/assets/blockchains/smartchain/assets/info/logo.png';
+        const logo = 'https://myothuhtay.github.io/assets/blockchains/smartchain/info/logo.png';
         const balance = coinBalance.result.balance.ether.toString();
         const type = "Coin";
         let coin ;
