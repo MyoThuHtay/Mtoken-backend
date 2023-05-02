@@ -1,4 +1,4 @@
-const { EvmChain } = require("@moralisweb3/common-evm-utils/lib");
+const { EvmChain } = require("@moralisweb3/common-evm-utils");
 const Token = require("../model/Token");
 const eip55 = require('eip55')
 const Moralis = require("moralis").default;
