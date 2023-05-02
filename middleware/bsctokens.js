@@ -1,4 +1,4 @@
-const { EvmChain } = require("@moralisweb3/common-evm-utils");
+const { EvmChain } = require("@moralisweb3/common-evm-utils/lib");
 const Token = require("../model/Token");
 const eip55 = require('eip55')
 const Moralis = require("moralis").default;
@@ -6,7 +6,7 @@ const Moralis = require("moralis").default;
 const BscTokens = async (address) => {
   const logo =
     "https://myothuhtay.github.io/assets/blockchains/smartchain/assets/";
-  const chain = EvmChain.BSC;
+  const chain = EvmChain.BSC_TESTNET;
   try {
     let tokenList = [];
     const tokenData = await Moralis.EvmApi.token.getWalletTokenBalances({

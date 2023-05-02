@@ -1,11 +1,11 @@
-const { EvmChain } = require("@moralisweb3/common-evm-utils");
+const { EvmChain } = require("@moralisweb3/common-evm-utils/lib");
 const Token = require("../model/Token");
 const eip55 = require('eip55')
 const Moralis = require("moralis").default;
 
 const EthToken = async (address,type) => {
   const logo = "https://myothuhtay.github.io/assets/blockchains/ethereum/assets/";
-  const chain = EvmChain.ETHEREUM;
+  const chain = EvmChain.GOERLI;
 
   try {
     let tokenList = [];
