@@ -5,7 +5,7 @@ const Moralis = require("moralis").default;
 
 const EthToken = async (address,type) => {
   const logo = "https://myothuhtay.github.io/assets/blockchains/ethereum/assets/";
-  const chain = EvmChain.GOERLI;
+  const chain = EvmChain.SEPOLIA;
 
   try {
     let tokenList = [];
