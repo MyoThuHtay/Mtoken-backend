@@ -6,7 +6,7 @@ const Moralis = require("moralis").default;
 const PolygonTokens = async (address, type) => {
   const logo =
     "https://myothuhtay.github.io/assets/blockchains/polygon/assets/";
-  const chain = EvmChain.MUMBAI;
+  const chain = EvmChain.POLYGON_AMOY;
 
   try {
     let tokenList = [];
