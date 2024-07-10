@@ -57,7 +57,7 @@ authRouter.post('/api/signin', async (req, res) => {
 
 });
 
-authRouter.post('api/tokenIsValid', async (req, res) => {
+authRouter.post('/api/tokenIsValid', async (req, res) => {
     try {
         const token = req.header('x-auth-token');
         if (!token) return res.json(false);
