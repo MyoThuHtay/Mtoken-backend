@@ -3,7 +3,7 @@ const { EvmChain } = require("@moralisweb3/common-evm-utils");
 const User = require('../model/users');
 const Coins = require('../model/coins');
 //const address = "0xE887232387645C90601935FC028D0589d97942eb"
-const chain = EvmChain.GOERLI;
+const chain = EvmChain.SEPOLIA;
 
 const Eth = async (address, userEmail) => {
     try {
